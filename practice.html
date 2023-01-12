@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon" type="image/x-icon" href="icon.png">
+
+    <style>
+        .mydiv{
+            background-color:rgb(194, 117, 117);
+            color:white;
+            padding:20px;
+        }
+        a:link {
+            color: green;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: blue;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: red;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: yellow;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+        #divspan{
+            color:darkolivegreen;
+            font-weight:bold;
+        }
+        table,
+        th,
+        td {
+            border: 3px solid green;
+            border-collapse: collapse;
+            background-color: #D6EEEE;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Heading h1</h1>
+    <h2>Heading h2</h2>
+    <h6>Heading h6</h6>
+    <p style="border: 1px solid red; width: 70%;">This is a <b>praragraph</b>.</p>
+    <table style="width:50%">
+        <caption>Table with styling</caption>
+
+        <tr>
+            <th colspan="2">Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>43</td>
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>57</td>
+        </tr>
+    </table>
+    <br />
+    <a href="abc.html" title="Go image section" target="_blank">HTML Images</a>
+
+    <h3>Ordered list</h3>
+
+    <ol>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+
+    <h3>Description list</h3>
+    <dl>
+        <dt>Coffee</dt>
+        <dd>- black hot drink</dd>
+        <dt>Milk</dt>
+        <dd>- white cold drink</dd>
+    </dl>
+    <br />
+    <div class="mydiv">
+        <h3>Styled div with class</h3>
+        <p>Standing on the River Thames, its history going back to
+            its <span id='divspan'>inbetween span with id dark green</span>
+            founding by the Romans, who named it Londinium.</p>
+    </div>
+</body>
+
+</html>
