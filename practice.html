@@ -5,11 +5,12 @@
     <link rel="icon" type="image/x-icon" href="icon.png">
 
     <style>
-        .mydiv{
-            background-color:rgb(194, 117, 117);
-            color:white;
-            padding:20px;
+        .mydiv {
+            background-color: rgb(194, 117, 117);
+            color: white;
+            padding: 20px;
         }
+
         a:link {
             color: green;
             background-color: transparent;
@@ -33,10 +34,12 @@
             background-color: transparent;
             text-decoration: underline;
         }
-        #divspan{
-            color:darkolivegreen;
-            font-weight:bold;
+
+        #divspan {
+            color: darkolivegreen;
+            font-weight: bold;
         }
+
         table,
         th,
         td {
@@ -96,6 +99,37 @@
             its <span id='divspan'>inbetween span with id dark green</span>
             founding by the Romans, who named it Londinium.</p>
     </div>
+    <h3>Iframe example</h3>
+    <iframe src="abc.html" style="height:40%;width:60%;" title="Iframe Example"></iframe>
+
+    <h2>Html Form</h2>
+    <form action="#">
+        <fieldset width="50%">
+            <legend>Fieldset:</legend>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" value="John"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" value="Doe"><br>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1"> I have a bike</label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+        <label for="vehicle2"> I have a car</label><br>
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="css">CSS</label><br>
+        <label for="cars">Choose a car:</label>
+        <select id="cars" name="cars" >
+            <option value="volvo">Volvo</option>
+            <option value="audi">Audi</option>
+        </select><br>
+        <label for="birthdaytime">Birthday (date and time):</label>
+        <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+        <input type="submit" value="Submit">
+    </fieldset>
+
+    </form>
+
 </body>
 
 </html>
