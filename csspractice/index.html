@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Practice</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h2>Borders</h2>
+
+    <p class="normal">Normal border</p>
+    <p class="round1">Round border</p>
+    <p class="round2">Rounder border</p>
+    <p class="round3">Roundest border</p>
+
+    <div class="marg">
+        <p class="ex1">This paragraph has an inherited left margin (from the div element).</p>
+    </div>
+
+
+    <br>
+    <div class="border-box">The width of this div remains at 300px, in spite of the 50px of total left and right
+        padding, because of the box-sizing: border-box property.
+    </div>
+    <br>
+    <div class="box-model">This is a example of box model. width : 300px ,padding : 50px, border: 15px, margin: 20px
+    </div>
+    <div class="outline">This paragraph has an outline of 15px outside the border edge.</div>
+    <h3 class="text-formatting">Text formatting example it is converted to uppercase<br>new line</h3>
+    <h3 class="font-formatting">Font Formatting example</h3>
+
+    <p><b><a class="lnk" href="#">This link changes background-color</a></b></p>
+
+
+
+    <h2>Styling Lists With Colors</h2>
+
+    <ol>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ol>
+    <span>A display property with</span> <span>a value of "block" results in</span> <span>a line break between each span
+        elements.</span>
+
+
+
+    <h3>Positioning</h3>
+    <div class="relative">This div element has position: relative;
+        <div class="absolute">This div element has position: absolute;</div>
+    </div>
+
+
+
+    <h3>Z-index Example</h3>
+    <div class="container-z">
+        <div class="black-box">Black box (z-index: 1)</div>
+        <div class="gray-box">Gray box (z-index: 3)</div>
+        <div class="green-box">Green box (z-index: 2)</div>
+    </div>
+
+
+
+    <h3>Overflow: auto</h3>
+
+    <div class="overflow">You can use the overflow property when you want to have better control of the layout. The
+        overflow property specifies what happens if content overflows an element's box.</div>
+
+
+    <h2>Float Next To Each Other</h2>
+    <div class="div1 float">Div 1</div>
+    <div class="div2 float">Div 2</div>
+
+
+
+    <h2 style="clear: left;">Flexbox Aligning</h2>
+
+    <div class="center">
+        <p>vertically and horizontally centered.</p>
+    </div>
+
+
+
+    <h3>I am a <i>strong</i> element. I am a <i>strong</i> element.</h3>
+
+    <p class="ele">You can combine the ::first-letter and ::first-line pseudo-elements to add a special effect to the
+        first letter and the first line of a text!</p>
+
+
+
+
+    <h2>Styled forms </h2>
+
+    <form>
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="fname" value="John">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lname" value="Doe">
+    </form>
+
+
+
+
+    <h2>Gradient Example</h2>
+    <div id="grad1"></div>
+
+
+
+    <h3>Media Query Example, Resize to see effect</h3>
+    <div class="mediaq">This is color changing example for media query.</div>
+
+
+
+
+    <h3>Flex box example</h3>
+    <div class="flex-container">
+        <div style="flex-grow: 1">1</div>
+        <div style="flex-grow: 1">2</div>
+        <div style="flex-grow: 8">3</div>
+    </div>
+
+
+
+    <h3>Grid Example</h3>
+    <div class="grid-container">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+        <div class="item6">6</div>
+        <div class="item7">7</div>
+    </div>
+</body>
+
+</html>

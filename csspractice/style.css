@@ -1,0 +1,277 @@
+p.normal {
+    border: 2px dashed black;
+    padding: 5px;
+}
+
+p.round1 {
+    border: 2px double blue;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+p.round2 {
+    border: 2px inset red;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+p.round3 {
+    border: 2px solid red;
+    border-radius: 2px 10px 20px;
+    padding: 5px;
+}
+
+div.marg {
+    border: 1px solid red;
+    margin-left: 100px;
+}
+
+p.ex1 {
+    border: solid 1px;
+    margin-left: inherit;
+}
+
+div.border-box {
+    width: 300px;
+    padding: 25px;
+    box-sizing: border-box;
+    background-color: lightblue;
+}
+
+div.box-model {
+    background-color: lightgrey;
+    width: 300px;
+    border: 15px solid blue;
+    padding: 50px;
+    margin: 20px;
+}
+
+div.outline {
+    margin: 30px;
+    width: 400px;
+    background: yellow;
+    border: 1px solid black;
+    outline: 1px solid red;
+    outline-offset: 25px;
+}
+
+h3.text-formatting {
+    color: blue;
+    text-decoration: underline red double 2px;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 1.8;
+    text-shadow: 2px 2px 2px #000000;
+}
+
+h3.font-formatting {
+    color: red;
+    font-family: "Audiowide", serif;
+    font-style: italic;
+    font-size: 2em;
+}
+
+a.lnk:link {
+    color: #ff0000;
+}
+
+a.lnk:visited {
+    color: #0000ff;
+}
+
+a.lnk:hover {
+    background: #66ff66;
+}
+
+ol {
+    width: 500px;
+    background: #3399ff;
+    padding: 20px;
+}
+
+ol li {
+    background: #cce5ff;
+    color: darkblue;
+    margin: 5px;
+}
+
+span {
+    display: block;
+    font-size: large;
+}
+
+div.relative {
+    position: relative;
+    width: 600px;
+    height: 200px;
+    border: 3px solid #73AD21;
+}
+
+div.absolute {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 300px;
+    height: 100px;
+    border: 3px solid #73AD21;
+}
+
+.container-z {
+    position: relative;
+}
+
+.black-box {
+    position: relative;
+    z-index: 1;
+    border: 2px solid black;
+    height: 100px;
+    margin: 30px;
+}
+
+.gray-box {
+    position: absolute;
+    z-index: 3;
+    /* gray box will be above both green and black box */
+    background: lightgray;
+    height: 60px;
+    width: 70%;
+    left: 50px;
+    top: 50px;
+}
+
+.green-box {
+    position: absolute;
+    z-index: 2;
+    /* green box will be above black box */
+    background: lightgreen;
+    width: 35%;
+    left: 270px;
+    top: -15px;
+    height: 100px;
+}
+
+div.overflow {
+    background-color: coral;
+    width: 200px;
+    height: 65px;
+    border: 1px solid black;
+    overflow: auto;
+}
+
+.float {
+    float: left;
+    padding: 15px;
+    width: 200px;
+}
+
+.div1 {
+    background: red;
+}
+
+.div2 {
+    background: blue;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    border: 3px solid green;
+}
+
+h3 i:first-child {
+    color: blue;
+}
+
+p.ele::first-line {
+    color: #0000ff;
+    font-variant: small-caps;
+}
+
+p.ele::first-letter {
+    color: #ff0000;
+    font-size: xx-large;
+}
+
+input[type=text] {
+    display: block;
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #555;
+    outline: none;
+    background-color: aquamarine;
+}
+
+input[type=text]:focus {
+    background-color: lightblue;
+}
+
+#grad1 {
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    /* For browsers that do not support gradients */
+    background-image: conic-gradient(red, yellow, green, blue, black);
+    border-radius: 50%;
+}
+
+.mediaq {
+    font-size: large;
+    background-color: tan;
+    color: black;
+}
+
+/* On screens that are 992px wide or less, the background color is blue */
+@media screen and (max-width: 992px) {
+    .mediaq {
+        background-color: blue;
+        color: white;
+    }
+}
+
+/* On screens that are 600px wide or less, the background color is olive */
+@media screen and (max-width: 600px) {
+    .mediaq {
+        background-color: red;
+        color: white;
+    }
+}
+
+.flex-container {
+    display: flex;
+    align-items: stretch;
+    background-color: #f1f1f1;
+}
+
+.flex-container>div {
+    background-color: DodgerBlue;
+    color: white;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+.item1 {
+    grid-area: myArea;
+}
+
+.grid-container {
+    width: 60%;
+    display: grid;
+    grid-template-areas: 'myArea myArea . . .' 'myArea myArea . . .';
+    gap: 10px;
+    background-color: #478bc3;
+    padding: 10px;
+}
+
+.grid-container>div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
