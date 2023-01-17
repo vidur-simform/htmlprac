@@ -194,3 +194,84 @@ p.ele::first-letter {
     color: #ff0000;
     font-size: xx-large;
 }
+
+input[type=text] {
+    display: block;
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #555;
+    outline: none;
+    background-color: aquamarine;
+}
+
+input[type=text]:focus {
+    background-color: lightblue;
+}
+
+#grad1 {
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    /* For browsers that do not support gradients */
+    background-image: conic-gradient(red, yellow, green, blue, black);
+    border-radius: 50%;
+}
+
+.mediaq {
+    font-size: large;
+    background-color: tan;
+    color: black;
+}
+
+/* On screens that are 992px wide or less, the background color is blue */
+@media screen and (max-width: 992px) {
+    .mediaq {
+        background-color: blue;
+        color: white;
+    }
+}
+
+/* On screens that are 600px wide or less, the background color is olive */
+@media screen and (max-width: 600px) {
+    .mediaq {
+        background-color: red;
+        color: white;
+    }
+}
+
+.flex-container {
+    display: flex;
+    align-items: stretch;
+    background-color: #f1f1f1;
+}
+
+.flex-container>div {
+    background-color: DodgerBlue;
+    color: white;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+.item1 {
+    grid-area: myArea;
+}
+
+.grid-container {
+    width: 60%;
+    display: grid;
+    grid-template-areas: 'myArea myArea . . .' 'myArea myArea . . .';
+    gap: 10px;
+    background-color: #478bc3;
+    padding: 10px;
+}
+
+.grid-container>div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
