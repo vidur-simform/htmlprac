@@ -7,7 +7,7 @@
     -> All important topics examples are covered
         icons, headings, layout, paragraph, div, span, images, list, iframes, forms, float layout, entity, symbol, graphics, media etc.
 
-**To view page add path of practice.html file in your browser or directly host from editor.**
+_To view page add path of practice.html file in your browser or directly host from editor._
   
 #
 ### csspractice
@@ -16,4 +16,4 @@
                 max-hight, position, z-index, overflow, float, inline-block, horizontal & vertical-align, forms, pseudo-class and pseudo-element, 
                 Gradients and Shadows, Media-Queries, Flex-box, Grid etc.
 
-**To view page add path of index.html file in your browser or directly host from editor.**
+_To view page add path of index.html file in your browser or directly host from editor._
